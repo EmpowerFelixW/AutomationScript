@@ -55,6 +55,7 @@ namespace EmpowerFelixW_1
 	using System.Collections.Generic;
 	using System.Globalization;
 	using System.Text;
+	using Empower.Library.Room1;
 	using Skyline.DataMiner.Automation;
 	using Skyline.DataMiner.Core.DataMinerSystem.Automation;
 
@@ -72,14 +73,13 @@ namespace EmpowerFelixW_1
 			engine.GenerateInformation("Hi!");
 			var byDms = engine.GetDms();
 
-			// for (int i = 0; i < length; i++)
-			// {
-
-			// }
 			foreach (var element in byDms.GetElements())
 			{
 				engine.GenerateInformation("ELement Name: " + element.Name);
 			}
+
+			var order = OrderFactory.CreateOrder("Order 2");
+			order.Dispatch("Felix Wesemeier");
 		}
 	}
 }
