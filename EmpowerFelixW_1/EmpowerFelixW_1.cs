@@ -56,7 +56,8 @@ namespace EmpowerFelixW_1
 	using System.Globalization;
 	using System.Text;
 	using Skyline.DataMiner.Automation;
-	
+	using Skyline.DataMiner.Core.DataMinerSystem.Automation;
+
 	/// <summary>
 	/// Represents a DataMiner Automation script.
 	/// </summary>
@@ -69,8 +70,16 @@ namespace EmpowerFelixW_1
 		public void Run(IEngine engine)
 		{
 			engine.GenerateInformation("Hi!");
+			var byDms = engine.GetDms();
 
-			// Something
+			// for (int i = 0; i < length; i++)
+			// {
+
+			// }
+			foreach (var element in byDms.GetElements())
+			{
+				engine.GenerateInformation("ELement Name: " + element.Name);
+			}
 		}
 	}
 }
