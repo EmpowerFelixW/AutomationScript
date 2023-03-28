@@ -69,6 +69,8 @@ namespace EmpowerFelixW_1
 		public void Run(IEngine engine)
 		{
 			engine.GenerateInformation("Hi!");
+
+			// Something
 		}
 	}
 }

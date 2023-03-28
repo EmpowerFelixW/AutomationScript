@@ -41,10 +41,6 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
-    <ProjectReference Include="..\AutomationScript_ClassLibrary\AutomationScript_ClassLibrary.csproj">
-      <Project>{A2EED625-0D9B-4646-9F1D-AA5837BF70AD}</Project>
-      <Name>AutomationScript_ClassLibrary</Name>
-    </ProjectReference>
     <AdditionalFiles Include="stylecop.json" />
     <Content Include=".editorconfig" />
   </ItemGroup>
@@ -54,7 +50,7 @@
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Skyline.DataMiner.Dev.Automation">
-      <Version>10.1.0.6</Version>
+      <Version>10.3.3.1</Version>
     </PackageReference>
     <PackageReference Include="StyleCop.Analyzers">
       <Version>1.1.118</Version>
